@@ -1,0 +1,88 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+a:hover {
+    font-weight: bold;
+    color: red;
+}
+
+.header {
+    background-color: #f8f8f8;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 50px;
+}
+
+.head-links a {
+    margin: 0 15px;
+    color: black;
+}
+
+.container {
+    display: flex;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.left-content {
+    width: 30%;
+    padding-right: 20px;
+}
+
+.right-content {
+    width: 70%;
+}
+
+.video-item {
+    margin-bottom: 15px;
+}
+
+.video-item img {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-content, .right-content {
+        width: 100%;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
